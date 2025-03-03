@@ -653,4 +653,46 @@ img{
       height: 120px;
   }
 }
+/* Adjust menu items for mobile */
+@media screen and (max-width: 600px) {
+  .menu__container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .menu__content {
+    width: 90%; /* Make each menu item take full width */
+    min-height: auto; /* Remove fixed height */
+    padding: 1rem;
+    text-align: left; /* Align text properly */
+    position: relative;
+  }
+
+  .menu__img {
+    width: 80px; /* Smaller image size */
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+
+  .menu__name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .menu__detail {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .menu__preci {
+    font-size: 16px;
+    font-weight: bold;
+    color: #069C54;
+    margin-top: 5px;
+    position: relative; /* Remove absolute positioning */
+    text-align: right;
+  }
+}
 
