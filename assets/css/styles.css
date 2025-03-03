@@ -568,3 +568,47 @@ img{
         height: 640px;
     }
 }
+.breakfast-img {
+  width: 250px;  /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Prevents stretching */
+  border-radius: 10px; /* Optional rounded edges */
+}
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything */
+  text-align: center;
+}
+
+.menu__preci {
+  display: block;
+  font-size: 18px; /* Adjust size as needed */
+  font-weight: bold;
+  margin-top: 5px;
+  min-height: 30px; /* Ensures all prices align */
+}
+.menu__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 220px; /* Ensures uniform item height */
+  position: relative; /* Helps with absolute positioning */
+}
+
+.menu__preci {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: auto; /* Pushes the price to the bottom */
+  position: absolute;
+  bottom: 10px;
+}
+
