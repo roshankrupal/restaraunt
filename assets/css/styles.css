@@ -611,4 +611,46 @@ img{
   position: absolute;
   bottom: 10px;
 }
+/* Ensure images are the same size */
+.menu__img {
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Ensure uniform height */
+  object-fit: cover; /* Prevent distortion */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Align prices horizontally */
+.menu__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Make sure the prices align properly */
+.menu__preci {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5722; /* Adjust color as needed */
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .menu__container {
+      grid-template-columns: 1fr; /* One column layout for small screens */
+  }
+  .menu__img {
+      width: 120px;
+      height: 120px;
+  }
+}
 
