@@ -63,12 +63,43 @@ html{
 }
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme{
+/* Dark Theme Variables */
+body.dark-theme {
   --title-color: #F1F3F2;
   --text-color: #C7D1CC;
   --body-color: #1D2521;
   --container-color: #27302C;
+  --first-color: #0e6b3f;
 }
+
+/* Apply Colors to Elements */
+.dark-theme .l-header {
+  background-color: var(--container-color);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .footer__container {
+  background-color: var(--container-color);
+}
+
+.dark-theme .footer__logo,
+.dark-theme .footer__title,
+.dark-theme .footer__description,
+.dark-theme .footer__link {
+  color: var(--text-color);
+}
+
+.dark-theme .contact__container {
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+
+/* Menu items */
+.dark-theme .menu__item,
+.dark-theme .menu__link {
+  color: var(--text-color) !important;
+}
+
 
 /*========== Button Dark/Light ==========*/
 .change-theme{
@@ -695,4 +726,104 @@ img{
     text-align: right;
   }
 }
+.menu__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu__img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+.menu__name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.menu__preci {
+  font-size: 0.9rem;
+  color: #e67e22;
+  font-weight: bold;
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .menu__container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+  }
+  .menu__content {
+      padding: 10px;
+  }
+  .menu__name {
+      font-size: 0.9rem;
+  }
+  .menu__preci {
+      font-size: 0.8rem;
+  }
+}
+
+/* Logo and Text Alignment */
+/* Logo and Text Alignment */
+.nav {
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center; /* Aligns items properly */
+  width: 100%;
+  padding: 10px 20px; /* Adds some spacing */
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center; /* Aligns logo and text in one row */
+  gap: 10px; /* Adjust spacing between logo and text */
+}
+
+.preethy-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  padding-top: 10px; /* Increased from 3px to 5px */
+  transition: color 0.3s ease-in-out;
+
+}
+
+
+.nav__menu {
+  display: flex;
+  gap: 2rem; /* Adjusts spacing between menu items */
+  list-style: none;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  color: #333; /* Slightly black as in the image */
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__menu a:hover {
+  color: rgb(13, 76, 13); /* Turns light green on hover */
+}
+
+
+
+
 

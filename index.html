@@ -51,9 +51,8 @@
                     <div class="home__data">
                         <h1 class="home__title">Tasty food</h1>
                         <h2 class="home__subtitle">Try the best food of <br> the week.</h2>
-                        <a href="#" class="button">View Indian Food</a>
                         <a href="breakfast.html" class="button">View BreakFast</a>
-                        <a href="#" class="button">View Burgers</a>
+                        <a href="burgers.html" class="button">View Burgers</a>
                     </div>
     
                     <img src="assets/img/Home-Burger.png" alt="" class="home__img">
@@ -65,12 +64,12 @@
                 <div class="about__container  bd-grid">
                     <div class="about__data">
                         <span class="section-subtitle about__initial">About us</span>
-                        <h2 class="section-title about__initial">We cook the best <br> tasty food</h2>
+                        <h2 class="section-title about__initial">We cook the best <br> breakfast & burgers</h2>
                         <p class="about__description">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
                         <!-- <a href="#" class="button">Explore history</a> -->
                     </div>
 
-                    <img src="assets/img/Mainitem.png" alt="" class="about__img">
+                    <img src="assets/img/customized burgers.jpeg" alt="" class="about__img">
                 </div>
             </section>
 
@@ -90,11 +89,6 @@
                         <h3 class="services__title">Breakfast</h3>
                         <p class="services__description">We offer our clients excellent quality services with the best and delicious food in the city.</p>
                     </div>
-                    <div class="services__content">
-                        <img src="./assets/img/IndianFoodLogo.png" alt="" width="64px" height="64px">
-                        <h3 class="services__title">Indian Food</h3>
-                        <p class="services__description">We offer our clients excellent quality services with the best and delicious food in the city.</p>
-                    </div>
                 </div>
             </section>
 
@@ -107,7 +101,6 @@
                     <div class="menu__content">
                         <img src="assets/img/CLASSIC MUSHROOM BURGER.png" alt="" class="menu__img">
                         <h3 class="menu__name">Classic Mushroom Burger</h3>
-                        <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$9.99</span>
                         <!-- <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a> -->
                     </div>
@@ -115,40 +108,73 @@
                     <div class="menu__content">
                         <img src="assets/img/Western Omelette.png" alt="" class="menu__img">
                         <h3 class="menu__name">Western Omelette</h3>
-                        <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$10.99</span>
                         <!-- <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a> -->
                     </div>
                     
                     <div class="menu__content">
-                        <img src="assets/img/Chicken 65.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Chicken 65</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$14.99</span>
-                        <!-- <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a> -->
-                    </div>
-                    <div class="menu__content">
-                        <img src="assets/img/butter chicken.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Butter Chicken</h3>
-                        <span class="menu__detail">Delicious dish</span>
+                        <img src="assets/img/SALMON BURGER.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Salmon Burger</h3>
                         <span class="menu__preci">$15.99</span>
                         <!-- <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a> -->
                     </div>
                     <div class="menu__content">
-                        <img src="assets/img/Shrimp Masala.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Shrimp Masala</h3>
-                        <span class="menu__detail">Delicious dish</span>
+                        <img src="assets/img/TRUCKER BURGER.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Trucker Burger</h3>
+                        <span class="menu__preci">$9.99</span>
+                        <!-- <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a> -->
+                    </div>
+                    <div class="menu__content">
+                        <img src="assets/img/LOADED BURGER .png" alt="" class="menu__img">
+                        <h3 class="menu__name">Loaded burger</h3>
                         <span class="menu__preci">$16.99</span>
                         <!-- <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a> -->
                     </div>
                     <div class="menu__content">
                         <img src="assets/img/GRILLED SHRIMP burger.png" alt="" class="menu__img">
                         <h4 class="menu__name" >Grilled Shrimp Burger</h4>
-                        <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$12.99</span>
                         <!-- <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a> -->
                     </div>
                 </div>
+                <style>
+                    .menu__content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding: 20px; /* Increased padding */
+                    background: #fff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    min-height: 340px; /* Increased min-height */
+                }
+                
+                .menu__name {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-top: 15px; /* Increased margin */
+                    word-wrap: break-word;
+                    max-width: 90%;
+                }
+                
+                .menu__preci {
+                    font-size: 1rem;
+                    color: #e67e22;
+                    font-weight: bold;
+                    margin-top: 8px; /* Slightly increased margin */
+                }
+                
+                @media (min-width: 1024px) {
+                    .menu__content {
+                        min-height: 360px; /* More space for longer text */
+                    }
+                }
+                
+                
+                
+                    </style>
+                
             </section>
                    <!--========== BREAKFAST SECTION ==========-->
 <!-- <section class="menu section bd-container" id="breakfast">
@@ -261,7 +287,7 @@
                         <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly.</p>
                     </div>
                     <div class="contact__button">
-                        <a href="#" class="button">Contact us now</a>
+                        <a href="780-455-0035" class="button">Contact us now</a>
                     </div>
                 </div>
             </section>
