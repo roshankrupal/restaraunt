@@ -65,16 +65,17 @@ html{
 /*========== Variables Dark theme ==========*/
 /* Dark Theme Variables */
 body.dark-theme {
-  --title-color: #F1F3F2;
-  --text-color: #C7D1CC;
-  --body-color: #1D2521;
-  --container-color: #27302C;
-  --first-color: #0e6b3f;
+  --title-color: hwb(115 7% 44%);
+  --text-color: hsl(0, 0%, 5%);
+  --body-color: #010101;
+  --container-color: #060505;
+  --first-color: #118311;
+  --another-color:#11ebff;
 }
 
 /* Apply Colors to Elements */
 .dark-theme .l-header {
-  background-color: var(--container-color);
+  background-color: var(--another-color);
   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
@@ -86,7 +87,7 @@ body.dark-theme {
 .dark-theme .footer__title,
 .dark-theme .footer__description,
 .dark-theme .footer__link {
-  color: var(--text-color);
+  color: var(--title-color);
 }
 
 .dark-theme .contact__container {
@@ -787,19 +788,19 @@ img{
 
 .nav__logo {
   display: flex;
-  align-items: center; /* Aligns logo and text in one row */
-  gap: 10px; /* Adjust spacing between logo and text */
+  align-items:right; /* Aligns logo and text in one row */
+  gap: 1px; /* Adjust spacing between logo and text */
 }
 
 .preethy-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
   margin: 0;
-  line-height: 1;
+  line-height: 12;
   display: flex;
-  align-items: center;
-  padding-top: 10px; /* Increased from 3px to 5px */
+  align-items: center ;
+  padding-top: 7px; /* Increased from 3px to 5px */
   transition: color 0.3s ease-in-out;
 
 }
@@ -820,7 +821,7 @@ img{
 }
 
 .nav__menu a:hover {
-  color: rgb(13, 76, 13); /* Turns light green on hover */
+  color: rgb(15, 120, 15); /* Turns light green on hover */
 }
 
 
