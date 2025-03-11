@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.menu__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Adjust the width as needed */
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0; /* Ensure items do not overlap */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu__img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.menu__info {
+    flex: 1;
+    text-align: center;
+}
+
+.menu__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.menu__description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu__price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d57b1f;
+}
+    </style>
+
+        <title>Wraps, Wings & More</title>
+    </head>
+    <body>
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="index.html" class="nav__logo" style="display: flex;">
+                    <img src="./assets/img/Orange and Yellow Burger Flat Illustrative Food Place Logo.png" alt="" width="40px" height="40px" style="margin-top: 10px;"> 
+                    <p id="nav__logoname">Prethy's I am Hungry</p>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="epiceatss.html" class="nav__link active-link">Wraps, Wings & More</a></li>
+                        <li class="nav__item"><a href="burger.html" class="nav__link">Burgers</a></li>
+                        <li class="nav__item"><a href="breakfasts.html" class="nav__link">Breakfast</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="menu section bd-container" id="wraps-wings-more">
+                <h2 class="section-title">Wraps, Wings & More</h2>
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/Hot Chicken wrap.jpg" alt="Hot Chicken Wrap" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">HOT CHICKEN WRAP</h3>
+                            <p class="menu__description">Spicy, juicy chicken wrapped in soft bread with fresh veggies and zesty sauces for a bold, flavorful bite</p>
+                            <span class="menu__price">$11.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/beef donair.jpg" alt="Beef Donair" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">BEEF DONAIR</h3>
+                            <p class="menu__description">Juicy, seasoned beef wrapped in warm pita with fresh veggies and a rich, garlicky sauce for a deliciously satisfying bite</p>
+                            <span class="menu__price">$12.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Caesar Chicken wrap.jpg" alt="Caesar Chicken Wrap" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">CAESAR CHICKEN WRAP</h3>
+                            <p class="menu__description">Tender grilled chicken, crisp lettuce, parmesan, and creamy Caesar dressing, all wrapped for a classic, delicious bite</p>
+                            <span class="menu__price">$12.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/grilled ham and cheese with fries.jpg" alt="Grilled Ham and Cheese With Fries" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">GRILLED HAM & CHEESE WITH FRIES</h3>
+                            <p class="menu__description">Savory ham and melted cheese grilled to perfection, served with crispy fries and a refreshing pop for the ultimate comfort meal</p>
+                            <span class="menu__price">$11.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Bacon Chicken wrap.jpg" alt="Bacon Chicken Wrap" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">BACON CHICKEN WRAP</h3>
+                            <p class="menu__description">Juicy grilled chicken, crispy bacon, fresh veggies, and creamy sauce, all wrapped for the perfect smoky and savory bite</p>
+                            <span class="menu__price">$12.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Club House with Fries and Pop.jpg" alt="Club House With Fries & Pop" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">CLUB HOUSE WITH FRIES AND POP</h3>
+                            <p class="menu__description">A classic triple-layered delight with crispy bacon, tender chicken, fresh veggies, and creamy mayo, served with golden fries and a refreshing pop</p>
+                            <span class="menu__price">$13.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/rice bowl chicken curry chopped lettuce.jpg" alt="Rice Bowl Chicken Curry Chopped Lettuce" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">RICE BOWL CHICKEN CURRY CHOPPED LETTUCE</h3>
+                            <p class="menu__description">Tender chicken curry over fluffy rice with fresh chopped lettuce for a perfect balance of flavor and freshness</p>
+                            <span class="menu__price">$12.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Chicken Tenders.jpg" alt="Chicken Tenders" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">CHICKEN TENDERS</h3>
+                            <p class="menu__description">Crispy, golden, and juicy! Served with creamy ranch and classic ketchup for the perfect dipping experience</p>
+                            <span class="menu__price">$11.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Grilled Cheese with Fries and Pop.jpg" alt="Grilled Cheese with Fries & Pop" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">GRILLED CHEESE WITH FRIES & POP</h3>
+                            <p class="menu__description">Buttery, golden toast with gooey melted cheese, served with crispy fries and a refreshing pop for the ultimate comfort meal</p>
+                            <span class="menu__price">$8.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Sesame Chicken.jpg" alt="Sesame Chicken" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">SESAME CHICKEN</h3>
+                            <p class="menu__description">Crispy chicken tossed in a sweet and savory sesame sauce.</p>
+                            <span class="menu__price">$11.99</span>
+                        </div>
+                    </div>
+                    <div class="menu__content">
+                        <img src="assets/img/Fried Egg Sandwich with Fries and Pop.jpg" alt="Fried Egg Sandwich With Fries & Pop" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">FRIED EGG SANDWICH WITH FRIES & POP</h3>
+                            <p class="menu__description">Perfectly cooked eggs on toasted bread, served with crispy fries and a refreshing pop for a simple yet satisfying meal</p>
+                            <span class="menu__price">$8.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/rice bowl shrimp curry chopped lettuce.jpg" alt="Rice Bowl Shrimp Curry & Chopped Lettuce" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">RICE BOWL SHRIMO CURRY CHOPPED LETTUCE</h3>
+                            <p class="menu__description">Flavorful shrimp curry served over rice with fresh chopped lettuce for a delicious and hearty meal</p>
+                            <span class="menu__price">$13.99</span>
+                        </div>
+                    </div>
+                    <div class="menu__content">
+                        <img src="assets/img/Onion Rings.jpg" alt="Onion Rings" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">ONION RINGS</h3>
+                            <p class="menu__description">Golden, crunchy, and perfectly seasoned! A deliciously crispy treat with every bite!</p>
+                            <span class="menu__price">$6.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Tater Tots.jpg" alt="Tater Tots" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">TATER TOTS</h3>
+                            <p class="menu__description">Crispy, golden, and perfectly seasoned! A crunchy, bite-sized treat that's irresistibly delicious!</p>
+                            <span class="menu__price">$6.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Chicken Nuggets.jpg" alt="Chicken Nuggets" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">CHICKEN NUGGETS</h3>
+                            <p class="menu__description">Crispy on the outside, tender on the inside! Perfectly seasoned and served hot for a tasty bite every time</p>
+                            <span class="menu__price">$7.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Fish and Chips.jpg" alt="Fish & Chips" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">FISH & CHIPS</h3>
+                            <p class="menu__description">Crispy, golden fish fillets served with hot, crunchy fries for the perfect classic meal</p>
+                            <span class="menu__price">$12.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Popcorn Chicken.jpg" alt="Popcorn Chicken" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">POPCORN CHICKEN</h3>
+                            <p class="menu__description">Crispy, bite-sized chicken pieces bursting with flavor! Perfectly seasoned and great for snacking</p>
+                            <span class="menu__price">$11.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Cauli Wings.jpg" alt="Cauli Wings" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">CAULI WINGS</h3>
+                            <p class="menu__description">(hot sauce , ranch) Crispy, flavorful cauliflower bites tossed in bold seasonings, a perfect plant-based twist on classic wings!</p>
+                            <span class="menu__price">$9.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Salmon Salad.jpg" alt="Salmon Salad" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">SALMON SALAD</h3>
+                            <p class="menu__description">Fresh greens topped with perfectly grilled salmon, vibrant veggies, and a zesty dressing for a light yet flavorful meal</p>
+                            <span class="menu__price">$17.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Caesar Salad.jpg" alt="Caesar Salad" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">CAESAR SALAD</h3>
+                            <p class="menu__description">Crisp romaine, parmesan, croutons, and creamy Caesar dressing for a classic, refreshing bite</p>
+                            <span class="menu__price">$8.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Chicken Caesar.jpg" alt="Chicken Caesar" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">CHICKEN CAESAR</h3>
+                            <p class="menu__description">Grilled chicken, crisp romaine, parmesan, and creamy Caesar dressing for a hearty, classic favorite!</p>
+                            <span class="menu__price">$13.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Cheesy Loaded Sweet Potato Fries_ Perfect Side Dish.jpg" alt="Regular Potato and Sweet Potato Poutine" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">REGULAR POTATO & SWEET POTATO POUTINE</h3>
+                            <p class="menu__description">Classic or sweet potato fries topped with rich gravy and melty cheese curds for a deliciously indulgent treat</p>
+                            <span class="menu__price">$7.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Bacon poutine.jpg" alt="Bacon Poutine" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">BACON POUTINE</h3>
+                            <p class="menu__description">Crispy fries, savory bacon, rich gravy, and melty cheese curds for the ultimate comfort food</p>
+                            <span class="menu__price">$9.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Chicken poutine.jpg" alt="Chicken Poutine" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">CHICKEN POUTINE</h3>
+                            <p class="menu__description">Crispy fries topped with tender chicken, rich gravy, and melty cheese curds for a hearty, flavorful bite</p>
+                            <span class="menu__price">$9.99</span>
+                        </div>
+                    </div>
+                    <div class="menu__content">
+                        <img src="assets/img/Fries.jpg" alt="Chicken Poutine" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">FRIES</h3>
+                            <p class="menu__description">Golden, crunchy and perfectly seasoned. A deliciously crispy treat with every bite</p>
+                            <span class="menu__price">$6.99</span>
+                        </div>
+                    </div>
+                    <div class="menu__content">
+                        <img src="assets/img/Chicken Wings.jpg" alt="Chicken Poutine" class="menu__img">
+                        <div class="menu__info">
+                            <h3 class="menu__name">CHICKEN WINGS</h3>
+                            <p class="menu__description">Crispy, juicy and tossed in bold flavours for the ultimate wing experience</p>
+                            <span class="menu__price">$11.99</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Prethy's I am Hungry</a>
+                    <span class="footer__description">Restaurant</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Address</h3>
+                    <ul>
+                        <li>#101, 13139 - 156 STREET EDMONTON, AB T5V 1V2</li>
+                        <li>780-455-0035</li>
+                        <li>prethysiamhungry@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

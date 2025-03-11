@@ -66,7 +66,7 @@ html{
 /* Dark Theme Variables */
 body.dark-theme {
   --title-color: hwb(115 7% 44%);
-  --text-color: hsl(0, 0%, 5%);
+  --text-color: hsl(0, 100%, 98%);
   --body-color: #010101;
   --container-color: #060505;
   --first-color: #118311;
@@ -822,6 +822,37 @@ img{
 
 .nav__menu a:hover {
   color: rgb(15, 120, 15); /* Turns light green on hover */
+}
+.home__data {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align */
+  gap: 15px; /* Add space between buttons */
+}
+
+/* Style the buttons */
+.button {
+  display: block; /* Makes each button a block element */
+  width: 100%; /* Make it responsive */
+  max-width: 250px; /* Prevents being too wide */
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Ensure proper spacing on smaller screens */
+@media (max-width: 768px) {
+  .home__data {
+      width: 90%; /* Ensure proper layout */
+      text-align: center;
+  }
+
+  .button {
+      width: 80%; /* Adjust width for mobile */
+  }
 }
 
 

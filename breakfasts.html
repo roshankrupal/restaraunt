@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Menu</title>
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+   .menu__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.menu__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Adjust the width as needed */
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0; /* Ensure items do not overlap */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu__img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.menu__info {
+    flex: 1;
+    text-align: center;
+}
+
+.menu__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.menu__description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu__price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d57b1f;
+}
+    </style>
+    
+</head>
+<body>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header">
+        <nav class="nav bd-container">
+            <a href="index.html" class="nav__logo" style="display: flex;">
+                <img src="./assets/img/Orange and Yellow Burger Flat Illustrative Food Place Logo.png" 
+                     alt="" width="40px" height="40px" style="margin-top: 10px;"> 
+                <p id="nav__logoname">Prethy's I am Hungry</p>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="epiceatss.html" class="nav__link active-link">Wraps, Wings & More</a></li>
+                    <li class="nav__item"><a href="burger.html" class="nav__link">Burgers</a></li>
+                    <li class="nav__item"><a href="breakfasts.html" class="nav__link">Breakfast</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== BREAKFAST MENU ==========-->
+    <main class="l-main">
+        <section class="menu section bd-container">
+            <span class="section-subtitle">Morning Delights</span>
+            <h2 class="section-title">Breakfast</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="assets/img/2eggs.jpg" alt="2 Eggs" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">2 EGGS</h3>
+                        <p class="menu__description">Any style with a choice of Bacon, Ham or Sausage.</p>
+                        <span class="menu__price">$9.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/3eggs.jpg" alt="3 Eggs" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">3 EGGS</h3>
+                        <p class="menu__description">Any style (Over Easy, Sunny Side Up, Over Medium, Over Hard, Poached) with Bacon, Ham, or Sausage.</p>
+                        <span class="menu__price">$10.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/eggs_benedict.jpg" alt="Egg Benedict" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">EGG BENEDICT</h3>
+                        <p class="menu__description">2 Poached eggs with hollandaise, bacon strips, tomatoes, and hash browns.</p>
+                        <span class="menu__price">$9.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/baconbenny.jpg" alt="Bacon Benny" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">BACON BENNY</h3>
+                        <p class="menu__description">2 Poached eggs with hollandaise, bacon strips, tomatoes, and hash browns.</p>
+                        <span class="menu__price">$9.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/westernomlette.jpg" alt="Western Omelette" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">WESTERN OMELETTE</h3>
+                        <p class="menu__description">Served with hash browns, toast, and coffee.</p>
+                        <span class="menu__price">$10.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/vegetarianomelette.jpg" alt="Vegetarian Omelette" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">VEGETARIAN OMELETTE</h3>
+                        <p class="menu__description">Served with hash browns, toast, and coffee.</p>
+                        <span class="menu__price">$9.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/mushroomomelette.jpg" alt="Mushroom Omelette" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">MUSHROOM OMELETTE</h3>
+                        <p class="menu__description">Served with hash browns, toast, and coffee.</p>
+                        <span class="menu__price">$10.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/spanishomelette.jpg" alt="Spanish Omelette" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">SPANISH OMELETTE</h3>
+                        <p class="menu__description">Served with hash browns, toast, and coffee.</p>
+                        <span class="menu__price">$11.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/meatlover.jpg" alt="Meat Lover" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">MEAT LOVER</h3>
+                        <p class="menu__description">Served with hash browns, toast, and coffee.</p>
+                        <span class="menu__price">$13.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/baconmushroom.jpg" alt="Bacon Mushroom Omelette" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">BACON MUSHROOM OMELETTE</h3>
+                        <p class="menu__description">Served with hash browns, toast, and coffee.</p>
+                        <span class="menu__price">$10.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/sausagemushroom.jpg" alt="Sausage Mushroom Omelette" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">SAUSAGE, MUSHROOM OMELETTE</h3>
+                        <p class="menu__description">Served with hash browns, toast, and coffee.</p>
+                        <span class="menu__price">$10.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu__content">
+                    <img src="assets/img/pancakes.jpg" alt="Pancakes" class="menu__img breakfast-img">
+                    <div class="menu__info">
+                        <h3 class="menu__name">PANCAKES</h3>
+                        <p class="menu__description">Fluffy pancakes served with butter and syrup.</p>
+                        <span class="menu__price">$7.99</span>
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="index.html" class="footer__logo">Prethy's I am Hungry</a>
+                <span class="footer__description">Restaurant</span>
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
