@@ -923,31 +923,95 @@ img{
       margin-top: 30px; /* Pushes the about section down */
   }
 }
+/*========== MENU ==========*/
 @media screen and (max-width: 768px) {
-  .menu__content {
+  /* General Container Fixes */
+  .menu__item {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      width: 100%;
+      padding: 16px;
+  }
+
+  /* Image Container */
+  .menu__img-container {
+      display: flex;
       justify-content: center;
+      align-items: center;
       width: 100%;
   }
 
+  /* Image Styling */
   .menu__img {
-      display: block;
-      margin: 0 auto 15px auto; /* Centers image horizontally */
-      width: 130px;
-      height: 130px;
+      width: 80%; /* Adjust size as needed */
+      max-width: 150px; /* Ensures images aren't too large */
+      height: auto;
       object-fit: cover;
       border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+  }
+
+  /* Text Styling */
+  .menu__title {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .menu__description {
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+      margin-top: 5px;
+      max-width: 90%;
+  }
+
+  /* Buttons (View Burgers, View Breakfast, Epic Eats) */
+  .menu__button {
+      display: block;
+      width: 90%;
+      max-width: 250px;
+      margin: 10px auto;
+      padding: 10px;
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 16px;
+  }
+
+  /* Ensure Tasty Food text is visible */
+  .tasty-food-heading {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .tasty-food-subheading {
+      font-size: 16px;
+      text-align: center;
+      color: #444;
+      max-width: 90%;
+      margin: 10px auto;
+  }
+
+  /* Fix Overlapping About Us Text */
+  .about-us-section {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+  }
+
+  .about-us-text {
+      font-size: 16px;
+      line-height: 1.5;
+      max-width: 90%;
+      margin: 0 auto;
   }
 }
-
-
-
-
-
-
-
-
-
