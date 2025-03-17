@@ -855,6 +855,99 @@ img{
       width: 80%; /* Adjust width for mobile */
   }
 }
+.home__data, .home__img,
+.about__data, .about__img,
+.services__content, .menu__content,
+.app__data, .app__img,
+.contact__data, .contact__button,
+.footer__content {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .contact__button .button {
+      text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home__data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%; /* Ensures full width for centering */
+  }
+
+  .home__data .button {
+      width: 100%; /* Makes button fill the container */
+      max-width: 250px; /* Prevents it from being too wide */
+      text-align: center;
+      margin: 10px auto; /* Ensures full centering */
+      display: flex;
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+      padding-top: 100px; /* Adjust this value if needed */
+  }
+
+  .home__data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px; /* Moves text down slightly */
+  }
+
+  .home__title,
+  .home__subtitle {
+      margin-top: 10px; /* Ensures text is not hidden */
+  }
+}
+@media screen and (max-width: 768px) {
+  .home {
+      padding-bottom: 50px; /* Adds space below the home section */
+  }
+
+  .about__container {
+      margin-top: 30px; /* Pushes the about section down */
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .menu__img {
+      display: block;
+      margin: 0 auto; /* Ensures the image is perfectly centered */
+      width: 140px; /* Adjust as needed */
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+
+}
+
+
+
+
+
 
 
 
