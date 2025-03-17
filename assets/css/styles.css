@@ -202,7 +202,7 @@ img{
     padding: 1.5rem 0 1rem;
     text-align: center;
     background-color: var(--body-color);
-    transition: .4s;
+    transition: 0ms;
     box-shadow: 0 4px 4px rgba(0,0,0,.1);
     border-radius: 0 0 1rem 1rem;
     z-index: var(--z-fixed);
@@ -223,7 +223,7 @@ img{
 }
 
 .nav__link{
-  transition: .3s;
+  transition: 0ms;
 }
 
 .nav__link:hover{
@@ -262,7 +262,7 @@ img{
   background: rgba(6,156,84,.5);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
-  transition: .4s;
+  transition: 0ms;
   visibility: hidden;
 }
 
@@ -311,7 +311,7 @@ img{
   color: #FFF;
   padding: .75rem 1rem;
   border-radius: .5rem;
-  transition: .3s;
+  transition: 0ms;
 }
 
 .button:hover{
